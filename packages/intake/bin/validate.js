@@ -1,31 +1,31 @@
 #!/usr/bin/env node
 import yargs from 'yargs'
-import {hideBin} from 'yargs/helpers'
-import {validate} from '../src/validator'
-import {logger} from '@remotion-mp4/core'
-import {exit} from 'process'
+import { hideBin } from 'yargs/helpers'
+import { validate } from '../src/validator.js'
+import { logger } from '@remotion-mp4/core'
+import { exit } from 'process'
 
 async function main() {
   const argv = await yargs(hideBin(process.argv))
     .option('source', {
       alias: 's',
       type: 'string',
-      description: 'Validate specific animation (optional, validates all if not provided)'
+      description: 'Validate specific animation (optional, validates all if not provided)',
     })
     .option('verbose', {
       alias: 'v',
       type: 'boolean',
-      description: 'Verbose output'
+      description: 'Verbose output',
     })
     .help()
     .alias('help', 'h')
     .version()
     .parseAsync()
 
-  const {source, verbose} = argv as any
+  const { source, verbose } = argv
 
   try {
-    const results = await validate({source, verbose})
+    const results = await validate({ source, verbose })
 
     if (verbose) {
       console.log(JSON.stringify(results, null, 2))

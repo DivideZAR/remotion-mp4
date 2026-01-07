@@ -1,29 +1,18 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "module": "ESNext",
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
     "moduleResolution": "node",
     "jsx": "react-jsx",
     "resolveJsonModule": true,
-    "allowJs": true,
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "declaration": true,
-    "sourceMap": true
+    "sourceMap": true,
+    "composite": false
   },
-  "exclude": [
-    "node_modules",
-    "dist",
-    "out",
-    "input",
-    "packages/intake/templates",
-    "packages/intake/bin",
-    "**/tests/**",
-    "**/*.test.ts",
-    "**/*.test.tsx",
-    "packages/renderer/bin"
-  ]
+  "include": ["src/**/*", "remotion.config.ts"]
 }

@@ -13,6 +13,7 @@
     "remotion": "^4.0.138",
     "@remotion-mp4/animations-2d": "workspace:*",
     "@remotion-mp4/animations-3d": "workspace:*",
+    "@remotion-mp4/external-demoanimation": "workspace:*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

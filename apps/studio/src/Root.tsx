@@ -1,7 +1,8 @@
 import React from 'react'
-import {Composition} from 'remotion'
-import {SimpleText, Shapes} from '@remotion-mp4/animations-2d'
-import {RotatingCube} from '@remotion-mp4/animations-3d'
+import { Composition } from 'remotion'
+import { SimpleText, Shapes } from '@remotion-mp4/animations-2d'
+import { RotatingCube } from '@remotion-mp4/animations-3d'
+import { DemoAnimation } from '@remotion-mp4/external-demoanimation'
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -37,6 +38,17 @@ export const RemotionRoot: React.FC = () => {
         height={1080}
         defaultProps={RotatingCube.defaultProps}
         props={RotatingCube.propsSchema}
+      />
+
+      <Composition
+        id="DemoAnimation"
+        component={DemoAnimation}
+        durationInFrames={90}
+        fps={30}
+        width={1920}
+        height={1080}
+        defaultProps={DemoAnimation.defaultProps}
+        props={DemoAnimation.propsSchema}
       />
     </>
   )

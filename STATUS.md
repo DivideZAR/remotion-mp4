@@ -14,12 +14,12 @@
 - [x] Create ADRs
 - [x] Write tests
 
-## Phase 2: Core Renderer ⏸
-- [ ] Implement packages/renderer/
-- [ ] Implement bundling and caching
-- [ ] Implement CLI
-- [ ] Add max duration validation
-- [ ] Write tests
+## Phase 2: Core Renderer ✅
+- [x] Implement packages/renderer/
+- [x] Implement bundling and caching
+- [x] Implement CLI
+- [x] Add max duration validation
+- [x] Write tests
 
 ## Phase 2.5: AI Code Intake ⏸
 - [ ] Implement packages/intake/
@@ -71,4 +71,4 @@
 - [ ] Update STATUS.md
 - [ ] Tag release v1.0.0
 
-## Overall Progress: 28%
+## Overall Progress: 42%

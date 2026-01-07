@@ -11,11 +11,17 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "declaration": true,
-    "declarationMap": true,
-    "sourceMap": true,
-    "outDir": "./dist",
-    "rootDir": "./src",
-    "composite": true
+    "sourceMap": true
   },
-  "exclude": ["node_modules", "dist", "out"]
+  "exclude": [
+    "node_modules",
+    "dist",
+    "out",
+    "packages/intake/templates",
+    "packages/intake/bin",
+    "**/tests/**",
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "packages/renderer/bin"
+  ]
 }

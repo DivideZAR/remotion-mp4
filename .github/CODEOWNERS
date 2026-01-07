@@ -1,0 +1,60 @@
+# CODEOWNERS
+
+## Default Owners
+* @project-lead
+
+## Package Ownership
+
+### Core
+packages/core/ @arch
+packages/core/**/*.ts @arch
+
+### Renderer
+packages/renderer/ @renderer
+packages/renderer/**/*.ts @renderer
+
+### 2D Animations
+packages/animations-2d/ @anim2d
+packages/animations-2d/**/*.ts @anim2d
+
+### 3D Animations
+packages/animations-3d/ @anim3d
+packages/animations-3d/**/*.ts @anim3d
+
+### AI Intake
+packages/intake/ @intake
+packages/intake/**/*.ts @intake
+
+### Assets
+packages/assets/ @assets
+packages/assets/**/*.ts @assets
+
+## Application Ownership
+
+### Studio App
+apps/studio/ @dev
+apps/studio/**/*.tsx @dev
+apps/studio/**/*.ts @dev
+
+## Documentation & Configuration
+
+### Documentation
+docs/ @docs
+docs/**/*.md @docs
+
+### DevOps & CI/CD
+.github/ @devops
+.github/**/* @devops
+
+### Testing
+tests/ @testing
+tests/**/* @testing
+
+## Review Requirements
+
+- All PRs require at least 1 reviewer
+- Breaking changes require 2 reviewers
+- Changes to core contracts require approval from @arch
+- Changes to renderer require approval from @renderer
+- Changes to 3D animations require approval from @anim3d
+- Changes to CI/CD require approval from @devops

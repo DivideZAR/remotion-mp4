@@ -32,6 +32,8 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "@commitlint/cli": "^19.0.0",
+    "@commitlint/config-conventional": "^19.0.0",
     "@types/node": "^20.11.0",
     "@types/react": "^18.2.48",
     "@typescript-eslint/eslint-plugin": "^6.19.0",

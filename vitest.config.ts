@@ -1,4 +1,4 @@
-import {defineConfig} from 'vitest/config'
+import { defineConfig } from 'vitest/config'
 import path from 'path'
 
 export default defineConfig({
@@ -6,17 +6,10 @@ export default defineConfig({
     globals: true,
     environment: 'node',
     coverage: {
-      provider: 'c8',
+      provider: 'v8',
       reporter: ['text', 'json', 'html'],
-      exclude: [
-        'node_modules/',
-        'dist/',
-        'out/',
-        'tests/',
-        '**/*.test.ts',
-        '**/*.config.ts'
-      ]
-    }
+      exclude: ['node_modules/', 'dist/', 'out/', 'tests/', '**/*.test.ts', '**/*.config.ts'],
+    },
   },
   resolve: {
     alias: {
@@ -25,7 +18,7 @@ export default defineConfig({
       '@remotion-mp4/animations-2d': path.resolve(__dirname, 'packages/animations-2d/src'),
       '@remotion-mp4/animations-3d': path.resolve(__dirname, 'packages/animations-3d/src'),
       '@remotion-mp4/intake': path.resolve(__dirname, 'packages/intake/src'),
-      '@remotion-mp4/assets': path.resolve(__dirname, 'packages/assets/src')
-    }
-  }
+      '@remotion-mp4/assets': path.resolve(__dirname, 'packages/assets/src'),
+    },
+  },
 })

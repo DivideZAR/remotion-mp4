@@ -8,11 +8,11 @@
 - [x] Create STATUS.md
 - [x] Initial commit
 
-## Phase 1: Core Architecture ⏸
-- [ ] Implement packages/core/
-- [ ] Define interfaces and contracts
-- [ ] Create ADRs
-- [ ] Write tests
+## Phase 1: Core Architecture ✅
+- [x] Implement packages/core/
+- [x] Define interfaces and contracts
+- [x] Create ADRs
+- [x] Write tests
 
 ## Phase 2: Core Renderer ⏸
 - [ ] Implement packages/renderer/
@@ -71,4 +71,4 @@
 - [ ] Update STATUS.md
 - [ ] Tag release v1.0.0
 
-## Overall Progress: 14%
+## Overall Progress: 28%

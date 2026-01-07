@@ -1,0 +1,35 @@
+{
+  "name": "@remotion-mp4/animations-3d",
+  "version": "1.0.0",
+  "description": "3D animation compositions using @remotion/three",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "lint": "eslint src --ext .tsx",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "remotion",
+    "animations",
+    "3d",
+    "three"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@remotion/three": "^4.0.138",
+    "three": "^0.160.0",
+    "remotion": "^4.0.138",
+    "@remotion-mp4/core": "workspace:*",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.48",
+    "@types/three": "^0.160.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.1"
+  }
+}

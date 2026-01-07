@@ -1,0 +1,57 @@
+{
+  "name": "remotion-mp4",
+  "version": "1.0.0",
+  "description": "Production-grade Remotion rendering workflow with AI-generated code support",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "install": "npm install",
+    "dev": "npm run dev --workspace=apps/studio",
+    "build": "npm run build --workspaces --if-present",
+    "lint": "eslint . --ext .ts,.tsx",
+    "lint:fix": "eslint . --ext .ts,.tsx --fix",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
+    "render": "node packages/renderer/bin/remotion-render.js",
+    "intake:validate": "node packages/intake/bin/validate.js",
+    "intake:import": "node packages/intake/bin/import.js",
+    "intake:import-all": "node packages/intake/bin/import-all.js",
+    "intake:new": "node packages/intake/bin/new.js",
+    "intake:list": "node packages/intake/bin/list.js"
+  },
+  "keywords": [
+    "remotion",
+    "video",
+    "animation",
+    "ai-generated"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.2.48",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.2.4",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.1",
+    "@vitest/ui": "^1.2.1"
+  },
+  "dependencies": {
+    "remotion": "^4.0.138",
+    "@remotion/cli": "^4.0.138",
+    "@remotion/renderer": "^4.0.138",
+    "@remotion/bundler": "^4.0.138",
+    "@remotion/three": "^4.0.138",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "zod": "^3.22.4",
+    "yargs": "^17.7.2"
+  }
+}

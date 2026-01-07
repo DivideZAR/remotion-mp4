@@ -1,0 +1,12 @@
+# Place AI-generated animation code in subdirectories here
+# Example:
+# input/
+#   ├── my-first-animation/
+#   │   ├── Composition.tsx
+#   │   ├── props.ts
+#   │   ├── register.ts
+#   │   └── README.md
+#   └── external-cube/
+#       ├── Composition.tsx
+#       ├── props.ts
+#       └── register.ts

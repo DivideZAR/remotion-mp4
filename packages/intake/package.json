@@ -1,0 +1,38 @@
+{
+  "name": "@remotion-mp4/intake",
+  "version": "1.0.0",
+  "description": "External code intake",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "validate": "./bin/validate.js",
+    "import": "./bin/import.js",
+    "import-all": "./bin/import-all.js",
+    "new": "./bin/new.js",
+    "list": "./bin/list.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "lint": "eslint src --ext .ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "remotion",
+    "intake",
+    "ai-generated"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "zod": "^3.22.4",
+    "@remotion-mp4/core": "workspace:*",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.1"
+  }
+}

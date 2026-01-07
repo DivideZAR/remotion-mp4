@@ -1,0 +1,17 @@
+{
+  "name": "@remotion-mp4/external-${PACKACE_NAME}",
+  "version": "1.0.0",
+  "description": "${IS_3D ? '3D' : '2D'} animation: ${PACKAGE_NAME}",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    ${IS_3D ? '@remotion/three: "^4.0.138",\n    "three": "^0.160.0",' : ''}
+    "remotion": "^4.0.138",
+    "@remotion-mp4/core": "workspace:*",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.48",
+    "typescript": "^5.3.3"
+  }
+}

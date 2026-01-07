@@ -21,13 +21,13 @@
 - [x] Add max duration validation
 - [x] Write tests
 
-## Phase 2.5: AI Code Intake ⏸
-- [ ] Implement packages/intake/
-- [ ] Create scaffolding command
-- [ ] Create validation command
-- [ ] Create import commands
-- [ ] Implement guardrails
-- [ ] Write tests
+## Phase 2.5: AI Code Intake ✅
+- [x] Implement packages/intake/
+- [x] Create scaffolding command
+- [x] Create validation command
+- [x] Create import commands
+- [x] Implement guardrails
+- [x] Write tests
 
 ## Phase 3: Animations ✅
 - [x] Implement packages/animations-2d/
@@ -71,4 +71,4 @@
 - [ ] Update STATUS.md
 - [ ] Tag release v1.0.0
 
-## Overall Progress: 71%
+## Overall Progress: 85%
